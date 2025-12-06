@@ -1,117 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mrunal Kumbhare | Machine Learning Engineer | Web Developer</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <!-- Theme Toggle Switch -->
+
+<!-- NAVBAR -->
+<nav class="navbar">
+    <a href="#about">About</a>
+    <a href="#tech">Tech Stack</a>
+    <a href="#timeline">Timeline</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+
+    <!-- Toggle Switch with Icons -->
     <label class="switch">
         <input type="checkbox" id="theme-toggle">
-        <span class="slider"></span>
+        <span class="slider round">
+            <span class="icon sun">☀️</span>
+            <span class="icon moon">🌙</span>
+        </span>
     </label>
+</nav>
 
-    <!-- Header / Hero -->
-    <header class="hero">
-        <img src="mypic.jpg" alt="Profile Photo" class="profile-photo">
-        <div>
-            <h1 class="name">Mrunal Kumbhare</h1>
-            <p class="tagline">Aspiring Machine Learning Engineer</p>
+<!-- HERO SECTION -->
+<header class="hero">
+    <img src="mypic.jpg" alt="Profile Photo" class="profile-photo">
+
+    <div>
+        <h1 class="name">Mrunal Kumbhare</h1>
+        <p class="tagline">Aspiring Machine Learning Engineer</p>
+
+        <a class="resume-btn" href="Mrunal_Kumbhare_Resume.pdf" download>
+            Download Resume
+        </a>
+    </div>
+</header>
+
+<!-- ABOUT -->
+<section id="about" class="about">
+    <h2>About Me</h2>
+    <p>
+        I'm an aspiring Machine Learning Engineer with a passion for building intelligent 
+        systems and solving real-world problems with AI. I enjoy working with ML models, 
+        exploring deep learning architectures, and learning modern tools in the AI ecosystem.
+    </p>
+</section>
+
+<!-- TECH STACK -->
+<section id="tech" class="tech-stack">
+    <h2>Tech Stack</h2>
+
+    <div class="tech-grid">
+        <span>Python</span>
+        <span>C++</span>
+        <span>NumPy</span>
+        <span>Pandas</span>
+        <span>Transformers (NLP)</span>
+        <span>Jupyter Notebook</span>
+        <span>SQL</span>
+        <span>MongoDB</span>
+        <span>Git & GitHub</span>
+        <span>APIs</span>
+        <span>Node.js</span>
+        <span>Express</span>
+        <span>React</span>
+    </div>
+</section>
+
+<!-- TIMELINE -->
+<section id="timeline" class="timeline-section">
+    <h2>Education & Experience</h2>
+
+    <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+            <h3>NIT Hamirpur – M.Tech in CSE</h3>
+            <p>Aug'24 – Jun'26 : Pursuing</p>
+            <p>Exploring Machine Learning & NLP.</p>
         </div>
-    </header>
-
-   
-
-    <section class="about">
-        <h2>About Me</h2>
-        <p>
-            I'm an aspiring Machine Learning Engineer with a passion for building intelligent 
-            systems and solving real-world problems with AI. I enjoy working with ML models, 
-            exploring deep learning architectures, and learning modern tools in the AI ecosystem.
-        </p>
-    </section>
-
-    <!-- Tech Stack -->
-    <section class="tech-stack">
-        <h2>Tech Stack</h2>
-    
-        <div class="tech-grid">
-            <span>Python</span>
-            <span>C++</span>
-            <span>NumPy</span>
-            <span>Pandas</span>
-            <span>Transformers (NLP)</span>
-            <span>Jupyter Notebook</span>
-            <span>SQL</span>
-            <span>MongoDB</span>
-            <span>Git & GitHub</span>
-            <span>APIs</span>
-            <span>Node.js</span>
-            <span>Express</span>
-            <span>React</span>
-        </div>
-    </section>
-
-
-    <!-- Timeline -->
-    <section class="timeline-section">
-        <h2>Education & Experience</h2>
-
-        <div class="timeline">
-
-            <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                <div class="timeline-content">
-                    <h3>NIT Hamirpur – M.Tech in CSE</h3>
-                    <p>Aug'24 – Jun'26 : Pursuing</p>
-                    <p>Exploring Machine Learning & NLP.</p>
-                </div>
-            </div>
+    </div>
             
-            <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                <div class="timeline-content">
-                    <h3>Expert PLM - Teamcenter PLM Training</h3>
-                    <p>May'21 – Jun'22 : Completed</p>
-                    <p>Got interested in Coding & Computer Science thus decided to pursue my Masters in CSE</p>
-                </div>
-            </div>
+    <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+            <h3>Expert PLM - Teamcenter PLM Training</h3>
+            <p>May'21 – Jun'22 : Completed</p>
+            <p>Got interested in Coding & Computer Science thus decided to pursue my Masters in CSE</p>
+         </div>
+    </div>
 
-            <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                <div class="timeline-content">
-                    <h3>B.Engg in Mechanical Engineering</h3>
-                    <p>Aug'17 – May'21 : Completed</p>
-                    <p>Transitioned to Product Lifecycle Management (PLM).</p>
-                </div>
-            </div>
+    <div class="timeline-item">
+         <div class="timeline-dot"></div>
+         <div class="timeline-content">
+              <h3>B.Engg in Mechanical Engineering</h3>
+              <p>Aug'17 – May'21 : Completed</p>
+              <p>Transitioned to Product Lifecycle Management (PLM).</p>
+         </div>
+    </div>
+</section>
 
-        </div>
-    </section>
 
-    <section class="contact">
-        <h2>Contact</h2>
-        <p>Email: <a href="mailto:mrunalkumbhare007@gmail.com">mrunalkumbhare007@gmail.com</a></p>
-        <p>GitHub: <a href="https://github.com/ShogunScripts" target="_blank">github.com/ShogunScripts</a></p>
-        <p>LinkedIn: <a href="#" target="https://www.linkedin.com/in/mrunal-kumbhare-034b94155/">Mrunal Kumbhare</a></p>
-        <p>X.com: <a href="#" target="https://x.com/NovaDevworks">Nova Devworks</a></p>
-    </section>
 
-    <footer>
-        <p>© 2025 Mrunal Kumbhare</p>
-    </footer>
+<!-- CONTACT -->
+<section id="contact" class="contact">
+    <h2>Contact</h2>
 
-    <!-- Dark/Light Mode Script -->
-    <script>
-        const toggle = document.getElementById("theme-toggle");
-    
-        toggle.addEventListener("change", () => {
-            document.body.classList.toggle("dark");
-        });
-    </script>
+    <div class="contact-icons">
 
+        <a href="mailto:your-email@gmail.com" class="icon-link" target="_blank">
+            <img src="icons/gmail.png" alt="Gmail">
+        </a>
+
+        <a href="https://www.linkedin.com/in/your-profile" class="icon-link" target="_blank">
+            <img src="icons/linkedin.png" alt="LinkedIn">
+        </a>
+
+        <a href="https://github.com/ShogunScripts" class="icon-link" target="_blank">
+            <img src="icons/github.png" alt="GitHub">
+        </a>
+
+        <a href="https://twitter.com/your-handle" class="icon-link" target="_blank">
+            <img src="icons/x.png" alt="X">
+        </a>
+
+        <a href="https://instagram.com/your-instagram" class="icon-link" target="_blank">
+            <img src="icons/instagram.png" alt="Instagram">
+        </a>
+
+    </div>
+</section>
+
+
+<footer>
+    <p>© 2025 Mrunal Kumbhare</p>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
