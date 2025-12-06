@@ -167,3 +167,29 @@ input:checked + .slider:before {
     left: -30px;
     top: 5px;
 }
+
+
+/* -------- Contact Icons Section -------- */
+
+.contact-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 15px;
+}
+
+.icon-link img {
+    width: 32px;
+    height: 32px;
+    transition: transform 0.2s, opacity 0.2s;
+    opacity: 0.85;
+}
+
+.icon-link img:hover {
+    transform: scale(1.15);
+    opacity: 1;
+}
+
+.dark .icon-link img {
+    filter: brightness(0.8);
+}
