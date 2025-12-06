@@ -6,139 +6,130 @@
     <title>Mrunal Kumbhare | Machine Learning Engineer | Web Developer</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
+    
 <body>
 
-<!-- NAVBAR -->
-<nav class="navbar">
-    <a href="#about">About</a>
-    <a href="#tech">Tech Stack</a>
-    <a href="#timeline">Timeline</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
+<!-- Theme Toggle -->
+<label class="switch">
+    <input type="checkbox" id="theme-toggle">
+    <span class="slider"></span>
+</label>
 
-    <!-- Toggle Switch with Icons -->
-    <label class="switch">
-        <input type="checkbox" id="theme-toggle">
-        <span class="slider round">
-            <span class="icon sun">☀️</span>
-            <span class="icon moon">🌙</span>
-        </span>
-    </label>
-</nav>
+<div class="layout">
 
-<!-- HERO SECTION -->
-<header class="hero">
-    <img src="mypic.jpg" alt="Profile Photo" class="profile-photo">
+    <!-- LEFT SIDEBAR -->
+    <aside class="sidebar">
 
-    <div>
+        <img src="your-photo.jpg" class="profile-photo" alt="Profile">
+
         <h1 class="name">Mrunal Kumbhare</h1>
-        <p class="tagline">Aspiring Machine Learning Engineer</p>
+        <p class="subtitle">Aspiring ML Engineer | Web Developer</p>
 
-        <a class="resume-btn" href="Mrunal_Kumbhare_Resume.pdf" download>
+        <a class="resume-btn" href="your-resume.pdf" download>
             Download Resume
         </a>
-    </div>
-</header>
 
-<!-- ABOUT -->
-<section id="about" class="about">
-    <h2>About Me</h2>
-    <p>
-        I'm an aspiring Machine Learning Engineer with a passion for building intelligent 
-        systems and solving real-world problems with AI. I enjoy working with ML models, 
-        exploring deep learning architectures, and learning modern tools in the AI ecosystem.
-    </p>
-</section>
+        <!-- Social Icons -->
+        <div class="contact-icons">
 
-<!-- TECH STACK -->
-<section id="tech" class="tech-stack">
-    <h2>Tech Stack</h2>
+            <a href="mailto:your-email@gmail.com" class="icon-link">
+                <svg viewBox="0 0 24 24" class="icon-svg">
+                    <path fill="currentColor"
+                        d="M12 13.5 2 6.75V18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6.75L12 13.5zm10-9.25V6l-10 6.75L2 6V4.25A2 2 0 0 1 4 2h16a2 2 0 0 1 2 2z"/>
+                </svg>
+            </a>
 
-    <div class="tech-grid">
-        <span>Python</span>
-        <span>C++</span>
-        <span>NumPy</span>
-        <span>Pandas</span>
-        <span>Transformers (NLP)</span>
-        <span>Jupyter Notebook</span>
-        <span>SQL</span>
-        <span>MongoDB</span>
-        <span>Git & GitHub</span>
-        <span>APIs</span>
-        <span>Node.js</span>
-        <span>Express</span>
-        <span>React</span>
-    </div>
-</section>
+            <a href="https://linkedin.com/in/your-link" class="icon-link" target="_blank">
+                <svg viewBox="0 0 24 24" class="icon-svg">
+                    <path fill="currentColor"
+                        d="M4.98 3.5C4.98 4.88 3.86 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM0 8h5v15H0V8zm7.5 0h4.8v2.1h.07c..."
+                    />
+                </svg>
+            </a>
 
-<!-- TIMELINE -->
-<section id="timeline" class="timeline-section">
-    <h2>Education & Experience</h2>
+            <a href="https://github.com/ShogunScripts" class="icon-link" target="_blank">
+                <svg viewBox="0 0 24 24" class="icon-svg">
+                    <path fill="currentColor"
+                        d="M12 0a12 12 0 0 0-3.79 23.4c..."
+                    />
+                </svg>
+            </a>
 
-    <div class="timeline-item">
-        <div class="timeline-dot"></div>
-        <div class="timeline-content">
-            <h3>NIT Hamirpur – M.Tech in CSE</h3>
-            <p>Aug'24 – Jun'26 : Pursuing</p>
-            <p>Exploring Machine Learning & NLP.</p>
+            <a href="https://twitter.com/your-handle" class="icon-link">
+                <svg viewBox="0 0 24 24" class="icon-svg">
+                    <path fill="currentColor"
+                        d="M18.9 1.5h3.1l-6.8 7.8 8 10.2h-6.3..."
+                    />
+                </svg>
+            </a>
+
+            <a href="https://instagram.com/your-handle" class="icon-link">
+                <svg viewBox="0 0 24 24" class="icon-svg">
+                    <path fill="currentColor"
+                        d="M7 2C4.2 2 2 4.2 2 7v10c0..."
+                    />
+                </svg>
+            </a>
+
         </div>
-    </div>
-            
-    <div class="timeline-item">
-        <div class="timeline-dot"></div>
-        <div class="timeline-content">
-            <h3>Expert PLM - Teamcenter PLM Training</h3>
-            <p>May'21 – Jun'22 : Completed</p>
-            <p>Got interested in Coding & Computer Science thus decided to pursue my Masters in CSE</p>
-         </div>
-    </div>
 
-    <div class="timeline-item">
-         <div class="timeline-dot"></div>
-         <div class="timeline-content">
-              <h3>B.Engg in Mechanical Engineering</h3>
-              <p>Aug'17 – May'21 : Completed</p>
-              <p>Transitioned to Product Lifecycle Management (PLM).</p>
-         </div>
-    </div>
-</section>
+    </aside>
 
+    <!-- RIGHT CONTENT (SCROLLABLE) -->
+    <main class="content">
 
+        <section id="about" class="about">
+            <h2>About Me</h2>
+            <p>
+                I'm an aspiring Machine Learning Engineer with a passion for building
+                intelligent systems and solving real-world problems using AI.
+            </p>
+        </section>
 
-<!-- CONTACT -->
-<section id="contact" class="contact">
-    <h2>Contact</h2>
+        <section id="tech" class="tech-stack">
+            <h2>Tech Stack</h2>
+            <div class="tech-grid">
+                <span>Python</span>
+                <span>NumPy</span>
+                <span>Pandas</span>
+                <span>PyTorch</span>
+                <span>TensorFlow</span>
+                <span>Scikit-Learn</span>
+                <span>MongoDB</span>
+                <span>Git & GitHub</span>
+            </div>
+        </section>
 
-    <div class="contact-icons">
+        <section id="timeline" class="timeline-section">
+            <h2>Education & Experience</h2>
 
-        <a href="mailto:your-email@gmail.com" class="icon-link" target="_blank">
-            <img src="icons/gmail.png" alt="Gmail">
-        </a>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>M.Tech in CSE</h3>
+                        <p>2024 – Present</p>
+                        <p>Specializing in ML & Distributed Systems</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-        <a href="https://www.linkedin.com/in/your-profile" class="icon-link" target="_blank">
-            <img src="icons/linkedin.png" alt="LinkedIn">
-        </a>
+        <section id="contact" class="contact">
+            <h2>Contact</h2>
+            <p>Email: your-email@gmail.com</p>
+        </section>
 
-        <a href="https://github.com/ShogunScripts" class="icon-link" target="_blank">
-            <img src="icons/github.png" alt="GitHub">
-        </a>
+        <footer>
+            <p>© 2025 Mrunal Kumbhare</p>
+        </footer>
 
-        <a href="https://twitter.com/your-handle" class="icon-link" target="_blank">
-            <img src="icons/x.png" alt="X">
-        </a>
+    </main>
 
-        <a href="https://instagram.com/your-instagram" class="icon-link" target="_blank">
-            <img src="icons/instagram.png" alt="Instagram">
-        </a>
-
-    </div>
-</section>
-
-
-<footer>
-    <p>© 2025 Mrunal Kumbhare</p>
-</footer>
+</div>
 
 <script src="script.js"></script>
 </body>
+
 </html>
