@@ -1,57 +1,113 @@
-/* ------ Global Styles ------ */
-
+/* ---------- Base Styles ---------- */
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
+    font-family: Arial, sans-serif;
     background: #fafafa;
     color: #222;
-    line-height: 1.6;
+    transition: background 0.3s, color 0.3s;
 }
 
-/* ------ Header ------ */
+.dark {
+    background: #111;
+    color: #ddd;
+}
 
-header {
-    text-align: center;
-    padding: 60px 20px;
+section {
+    max-width: 750px;
+    margin: 50px auto;
+    padding: 0 20px;
+}
+
+/* ---------- Toggle Button ---------- */
+#theme-toggle {
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    background: none;
+    border: none;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+/* ---------- Hero Section ---------- */
+.hero {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 50px 20px;
+    justify-content: center;
+    text-align: left;
+}
+
+.profile-photo {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    object-fit: cover;
 }
 
 .name {
-    font-size: 2.3rem;
-    font-weight: 700;
+    font-size: 2rem;
     margin: 0;
 }
 
 .tagline {
-    font-size: 1.1rem;
     color: #555;
 }
 
-/* ------ Sections ------ */
-
-section {
-    max-width: 750px;
-    margin: 40px auto;
-    padding: 0 20px;
+.dark .tagline {
+    color: #ccc;
 }
 
-h2 {
-    margin-bottom: 10px;
-    font-size: 1.5rem;
+/* ---------- Timeline ---------- */
+
+.timeline {
+    margin-top: 30px;
+    border-left: 3px solid #aaa;
+    padding-left: 20px;
+}
+
+.timeline-item {
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.timeline-dot {
+    width: 14px;
+    height: 14px;
+    background: #007bff;
+    border-radius: 50%;
+    position: absolute;
+    left: -29px;
+    top: 5px;
+}
+
+.timeline-content h3 {
+    margin: 0 0 5px;
+}
+
+.timeline-content p {
+    margin: 3px 0;
 }
 
 
-/* ------ Contact ------ */
-
+/* ---------- Contact ---------- */
 .contact a {
-    color: #0066cc;
+    color: #007bff;
 }
 
-/* ------ Footer ------ */
+.dark .contact a {
+    color: #4dabff;
+}
 
+/* ---------- Footer ---------- */
 footer {
     text-align: center;
-    padding: 20px;
-    margin-top: 40px;
+    padding: 30px;
     font-size: 0.9rem;
     color: #666;
+}
+
+.dark footer {
+    color: #bbb;
 }
