@@ -1,3 +1,64 @@
+/* ---------- TWO COLUMN LAYOUT ---------- */
+.layout {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* LEFT SIDEBAR */
+.sidebar {
+    width: 300px;
+    background: #fff;
+    padding: 40px 20px;
+    text-align: center;
+    border-right: 1px solid #ddd;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+}
+
+.dark .sidebar {
+    background: #1a1a1a;
+    border-color: #333;
+}
+
+/* RIGHT CONTENT (SCROLLABLE) */
+.content {
+    flex: 1;
+    overflow-y: auto;
+    padding: 40px 20px;
+}
+
+.subtitle {
+    color: #777;
+    margin-top: 5px;
+    font-size: 0.95rem;
+}
+
+.dark .subtitle {
+    color: #bbb;
+}
+
+.contact-icons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+
+.icon-svg {
+    width: 26px;
+    height: 26px;
+    fill: currentColor;
+    opacity: 0.85;
+    transition: 0.25s;
+}
+
+.icon-link:hover .icon-svg {
+    transform: scale(1.2);
+    opacity: 1;
+}
+
+
 /* GLOBAL */
 body {
     margin: 0;
@@ -169,27 +230,31 @@ input:checked + .slider:before {
 }
 
 
+
 /* -------- Contact Icons Section -------- */
 
 .contact-icons {
     display: flex;
     justify-content: center;
-    gap: 20px;
-    margin-top: 15px;
+    gap: 22px;
+    margin-top: 18px;
 }
 
-.icon-link img {
-    width: 32px;
-    height: 32px;
-    transition: transform 0.2s, opacity 0.2s;
+.icon-svg {
+    width: 28px;
+    height: 28px;
+    fill: currentColor;
     opacity: 0.85;
+    transition: transform 0.25s ease, opacity 0.25s ease;
+    cursor: pointer;
 }
 
-.icon-link img:hover {
-    transform: scale(1.15);
+.icon-link:hover .icon-svg {
+    transform: scale(1.18);
     opacity: 1;
 }
 
-.dark .icon-link img {
-    filter: brightness(0.8);
+.dark .icon-svg {
+    filter: brightness(0.83);
 }
+
