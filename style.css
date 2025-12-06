@@ -1,10 +1,10 @@
-/* ---------- Base Styles ---------- */
+/* GLOBAL */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
     background: #fafafa;
     color: #222;
-    transition: background 0.3s, color 0.3s;
+    transition: background 0.4s ease, color 0.4s ease;
 }
 
 .dark {
@@ -12,20 +12,41 @@ body {
     color: #ddd;
 }
 
-section {
-    max-width: 750px;
-    margin: 50px auto;
-    padding: 0 20px;
+/* NAVBAR */
+.navbar {
+    position: sticky;
+    top: 0;
+    background: #fff;
+    padding: 12px 20px;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    border-bottom: 1px solid #ddd;
+    z-index: 100;
 }
 
-/* ---------- Toggle Switch ---------- */
+.dark .navbar {
+    background: #1a1a1a;
+    border-color: #333;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #222;
+    font-weight: 500;
+}
+
+.dark .navbar a {
+    color: #ddd;
+}
+
+/* TOGGLE SWITCH */
 .switch {
-    position: fixed;
-    top: 15px;
-    right: 15px;
-    display: inline-block;
-    width: 48px;
-    height: 24px;
+    position: absolute;
+    right: 20px;
+    top: 8px;
+    width: 50px;
+    height: 26px;
 }
 
 .switch input {
@@ -37,44 +58,50 @@ section {
 .slider {
     position: absolute;
     cursor: pointer;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #ccc;
+    inset: 0;
+    background: #ccc;
+    border-radius: 26px;
     transition: .4s;
-    border-radius: 24px;
 }
 
 .slider:before {
-    position: absolute;
     content: "";
-    height: 18px;
-    width: 18px;
+    position: absolute;
+    height: 20px;
+    width: 20px;
     left: 3px;
     bottom: 3px;
-    background-color: white;
-    transition: .4s;
+    background: white;
     border-radius: 50%;
+    transition: .4s;
 }
 
-/* When checked (dark mode ON) */
-.switch input:checked + .slider {
-    background-color: #007bff;
+input:checked + .slider {
+    background: #007bff;
 }
 
-.switch input:checked + .slider:before {
+input:checked + .slider:before {
     transform: translateX(24px);
 }
 
-/* ---------- Hero Section ---------- */
+/* Icons inside toggle */
+.slider .icon {
+    position: absolute;
+    font-size: 14px;
+    top: 5px;
+    pointer-events: none;
+}
+
+.sun { left: 6px; }
+.moon { right: 6px; }
+
+/* HERO */
 .hero {
     display: flex;
     align-items: center;
-    gap: 20px;
-    padding: 50px 20px;
+    gap: 25px;
+    padding: 60px 20px;
     justify-content: center;
-    text-align: left;
 }
 
 .profile-photo {
@@ -84,29 +111,50 @@ section {
     object-fit: cover;
 }
 
-.name {
-    font-size: 2rem;
-    margin: 0;
+/* RESUME BUTTON */
+.resume-btn {
+    display: inline-block;
+    background: #007bff;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 6px;
+    text-decoration: none;
+    margin-top: 10px;
+    font-size: 14px;
 }
 
-.tagline {
-    color: #555;
+.resume-btn:hover {
+    background: #005fcc;
 }
 
-.dark .tagline {
-    color: #ccc;
+/* TECH GRID */
+.tech-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 15px;
 }
 
-/* ---------- Timeline ---------- */
+.tech-grid span {
+    background: #fff;
+    padding: 8px 14px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
 
+.dark .tech-grid span {
+    background: #222;
+    border-color: #444;
+}
+
+/* TIMELINE */
 .timeline {
-    margin-top: 30px;
     border-left: 3px solid #aaa;
     padding-left: 20px;
 }
 
 .timeline-item {
-    margin-bottom: 30px;
+    margin: 25px 0;
     position: relative;
 }
 
@@ -116,36 +164,6 @@ section {
     background: #007bff;
     border-radius: 50%;
     position: absolute;
-    left: -29px;
+    left: -30px;
     top: 5px;
-}
-
-.timeline-content h3 {
-    margin: 0 0 5px;
-}
-
-.timeline-content p {
-    margin: 3px 0;
-}
-
-
-/* ---------- Contact ---------- */
-.contact a {
-    color: #007bff;
-}
-
-.dark .contact a {
-    color: #4dabff;
-}
-
-/* ---------- Footer ---------- */
-footer {
-    text-align: center;
-    padding: 30px;
-    font-size: 0.9rem;
-    color: #666;
-}
-
-.dark footer {
-    color: #bbb;
 }
