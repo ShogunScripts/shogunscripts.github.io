@@ -89,14 +89,20 @@ h1, h2, h3 {
 
 .icon-link img {
     width: 40px;
+    height: 40px;
+    transition: transform 0.25s ease, opacity 0.25s ease;
     opacity: 0.9;
-    transition: 0.25s;
 }
 
 .icon-link img:hover {
-    transform: scale(1.15);
+    transform: scale(1.18);
     opacity: 1;
 }
+
+.dark .icon-link img {
+    filter: brightness(0.85);
+}
+
 
 
 /* ----------------------------------------
