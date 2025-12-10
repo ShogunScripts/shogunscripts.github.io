@@ -102,6 +102,17 @@ h1, h2, h3 {
 /* ----------------------------------------
    RIGHT CONTENT
 ---------------------------------------- */
+.updated-date {
+    margin-top: 20px;
+    font-style: italic;
+    font-size: 0.9rem;
+    color: #777;
+}
+
+.dark .updated-date {
+    color: #aaa;
+}
+
 .content {
     flex: 1;
     padding: 40px 30px;
@@ -124,16 +135,6 @@ h1, h2, h3 {
     color: inherit;
 }
 
-.updated-date {
-    margin-top: 20px;
-    font-style: italic;
-    font-size: 0.9rem;
-    color: #777;
-}
-
-.dark .updated-date {
-    color: #aaa;
-}
 
 
 /* ----------------------------------------
