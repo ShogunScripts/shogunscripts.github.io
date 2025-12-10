@@ -135,6 +135,19 @@ h1, h2, h3 {
     color: inherit;
 }
 
+.about-link {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+.about-link:hover {
+    text-decoration: underline;
+}
+
+.dark .about-link {
+    color: #4dabff;
+}
+
 
 
 /* ----------------------------------------
