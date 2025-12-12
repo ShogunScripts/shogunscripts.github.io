@@ -49,7 +49,7 @@ I enjoy experimenting with ML models, working on end-to-end AI projects, and con
 
 - **Email:** mrunalkumbhare007@gmail.com
 - **GitHub:** https://github.com/ShogunScripts  
-- **LinkedIn:** https://www.linkedin.com/in/mrunal-kumbhare-034b94155/
+- **LinkedIn:** https://www.linkedin.com/in/i-m-kumbhare/
 - **X.com:** https://x.com/NovaDevworks
 ---
 
