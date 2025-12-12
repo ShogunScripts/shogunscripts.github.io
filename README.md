@@ -25,7 +25,7 @@ I enjoy experimenting with ML models, working on end-to-end AI projects, and con
 - **Backend (Basic):** Node.js, Express
 - **Frontend:** React
 - **Languages:** C++, Python, JS
-- **Other:** Git/GitHub, APIs, Distributed Systems
+- **Other:** Git/GitHub, APIs
 
 ---
 
